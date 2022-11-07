@@ -15,5 +15,16 @@ contacts = [gustavo, joao]
 
 for contact in contacts:
     print("-------------------------------")
-    print("Contact with name:", contact.name)
-    print("Contact with age:", contact.age)
+    print("First list! Contact with name:", contact.name, "and age:", contact.age)
+
+
+maria = Contact()
+maria.name = "Maria"
+maria.age = 30
+
+contacts.append(maria)
+contacts.remove(joao)
+
+for contact in contacts:
+    print("-------------------------------")
+    print("Second list! Contact with name:", contact.name, "and age:", contact.age)
